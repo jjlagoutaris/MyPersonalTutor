@@ -1,0 +1,99 @@
+.app__navbar-bg{
+  width: var(--container-width);
+  padding: 0px;
+  margin: 0px;
+  .app__navbar-logo {
+    justify-content: flex-start;
+    font-size: 3rem;
+    width: fit-content;
+    padding-left: 10px;
+    @media screen and (max-width: 600px){
+      padding-left: 10px;
+      font-size: 1.5rem;
+    }
+    > img{
+      max-height: 80px;
+      @media screen and (max-width: 800px){
+        max-width: 250px;
+      }
+      @media screen and (max-width: 600px){
+        max-width: 150px;
+      }
+      @media screen and (max-width: 500px){
+        max-width: 100px;
+      }
+      @media screen and (max-width: 400px){
+        max-width: 70px;
+      }
+    }
+  }
+  .app__navbar-col2{
+    .app__navbar-socials{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      
+    
+      Button{
+        background-color: var(--blue);
+        border-radius: 50%;
+        border: none;
+        &:hover{
+          background-color: var(--yellow);
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      gap: 10px;
+      padding: 10px;
+    }
+    @media screen and (max-width: 600px){
+      gap: 5px;
+    }
+  }
+  @media screen and (max-width: 1120px) {
+    width: 100vw;
+  }
+}
+
+div > a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: .9rem;
+  }
+}
+
+.navbar-right{
+  float: right;
+}
+
+#offcanvasNavbar-expand-lg{
+  @media screen and (max-width: 600px) {
+    width: 66%;
+  }
+}
+
+#offcanvas-links{
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    > a{
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.offcanvas-title.h5{
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}

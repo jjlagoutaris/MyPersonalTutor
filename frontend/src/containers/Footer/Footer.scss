@@ -1,0 +1,21 @@
+.app__footer{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  line-height: .8rem;
+  width: 100%;
+  > :nth-child(1){
+    padding-top: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    line-height: 1rem;
+  }
+}
+
+.app__footer-name{
+  text-decoration: none;
+  color: var(--pink);
+}

@@ -1,0 +1,14 @@
+#app__blog-section-container{
+  background-color: var(--pink);
+  .row{
+    .app__section-picture-col{
+      justify-content: flex-start;
+      @media screen and (max-width: 993px) {
+        justify-content: center;
+      }
+    }
+    @media screen and (max-width: 993px) {
+      flex-direction: row;
+    }
+  }
+}

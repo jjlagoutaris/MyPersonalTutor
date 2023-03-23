@@ -1,0 +1,9 @@
+#app__services-section-container{
+  background-color: var(--blue);
+  .row{
+    flex-direction: row-reverse;
+    .app__section-picture-col{
+      justify-content: flex-start;
+    }
+  }
+}
