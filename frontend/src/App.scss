@@ -13,7 +13,9 @@ a{
 }
 
 .app__section-container{
-  width: 100%;
+  width: var(--container-width);
+  border-radius: 10px;
+  margin-bottom: 20px;
   height: 500px;
   img{
     max-height: 500px;
@@ -57,7 +59,7 @@ a{
       &:hover{
         background-color: black;
         color: var(--blue);
-        border-color: black;
+        border-color: white;
       }
     }
     @media screen and (max-width: 992px) {

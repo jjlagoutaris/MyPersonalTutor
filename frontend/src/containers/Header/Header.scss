@@ -47,11 +47,12 @@ a{
   .app__header-button{
     margin: 20px 0px;
     color: black;
-    background-color: var(--yellow);
+    background-color: var(--blue);
     border-color: black;
     &:hover{
-      background-color: var(--blue);
+      background-color: black;
       border-color: black;
+      color: var(--blue);
     }
   }
 }
