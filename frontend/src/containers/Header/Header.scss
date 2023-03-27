@@ -56,3 +56,19 @@ a{
     }
   }
 }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .app__header-moments-pic {
+    animation: app__header-moments-pic infinite 10s linear;
+  }
+}
+
+@keyframes app__header-moments-pic {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

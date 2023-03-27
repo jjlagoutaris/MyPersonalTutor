@@ -1,3 +1,33 @@
 #app__hello-section-container {
   background-color: var(--blue);
 }
+
+// @media (prefers-reduced-motion: no-preference){
+//   .app__section-info-header{
+//     animation: app__section-info-header infinite 1s ease-in-out;
+//   }
+// }
+
+// @keyframes app__section-info-header{
+//   from{
+//     transform: skew(-20deg);
+//   } to{
+//     transform: skew(20deg);
+//   }
+// }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .app__header-moments-pic {
+    animation: app__header-moments-pic infinite 10s linear;
+  }
+}
+
+@keyframes app__header-moments-pic {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

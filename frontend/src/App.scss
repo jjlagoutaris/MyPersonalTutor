@@ -13,7 +13,7 @@ a{
 }
 
 .app__section-container{
-  width: var(--container-width);
+  max-width: var(--container-width);
   border-radius: 10px;
   margin-bottom: 20px;
   height: 500px;
@@ -81,7 +81,7 @@ a{
     height: 1000px;
   }
   .app__section-info-description{
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 992px) {
       width: 80%; 
     }
   }
