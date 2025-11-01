@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./ServicesComponent.scss";
 import { Link } from "react-router-dom";
 import { urlFor, client } from "../../client";
+import BookButton from "../BookButton/BookButton";
 
 import {
   Container,
@@ -37,6 +38,10 @@ const ServicesComponent = () => {
               <Link to="/Services" className="app__section-info-button">
                 {services.button}
               </Link>
+              <div className="calendly-section" style={{ marginTop: "1rem", marginBottom: "1rem" }}>
+                {/* <h3>Book A Free 15-Minute Consultation 📅</h3> */}
+                <BookButton />
+              </div>
             </Col>
           </Row>
         ))}

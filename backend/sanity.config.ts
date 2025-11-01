@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'MyPersonalTutor',
+  title: 'YourPersonalPrep',
 
-  projectId: 'mhpj9g44',
+  projectId: 'sgivxvh3',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],

@@ -21,7 +21,7 @@ const Footer = () => {
           {footer.copyright}
           </p>
           <p className="app__footer-bottom">
-            Website by <a href="https://johnlagoutaris.netlify.app/" target="_blank" rel="noreferrer" className='app__footer-name'>John Lagoutaris</a>
+            Website by <a href="https://yourpersonalprep.com/about" target="_blank" rel="noreferrer" className='app__footer-name'>John Lagoutaris</a>
           </p>
         </Navbar>
       ))}

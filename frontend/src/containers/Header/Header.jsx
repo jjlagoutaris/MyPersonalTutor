@@ -4,6 +4,7 @@ import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { client, urlFor } from "../../client";
 import { PortableText } from "@portabletext/react";
+import BookButton from "../../components/BookButton/BookButton";
 
 const Header = () => {
   const [things, setThings] = useState([]);
@@ -26,14 +27,20 @@ const Header = () => {
             <div className="left app__paragraph-text-variant">
               <h2 className="app__header-moments-headline app__header-font-variant">{thing.header}</h2>
               <PortableText value={thing.body}/>
+              <div className="calendly-section" style={{ marginTop: "1rem", marginBottom: "1rem"}}>
+                {/* <h3>Book A Free 15-Minute Consultation 📅</h3> */}
+                <BookButton />
+              </div>
             </div>
 
             <div className="right app__flexCenter">
-              <img
-                src={urlFor(thing.image)}
+              {thing.image && (
+                <img
+                src={urlFor(thing.image).url()}
                 alt={thing.header}
                 className="app__header-moments-pic"
-              />
+                />
+              )}
             </div>
           </div>
 

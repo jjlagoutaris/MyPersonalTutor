@@ -30,7 +30,7 @@ const About = () => {
             <div className="app__about-bio app__paragraph-text">
               <PortableText value={aboutMe.body} className="app__about-body" />
             </div>
-            <img src={urlFor(aboutMe.image)} alt="Marta Leszczyńska" className="app__about-picture" />
+            <img src={urlFor(aboutMe.image)} alt="Me" className="app__about-picture" />
           </div>
 
         </Container>

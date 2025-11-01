@@ -1,1 +1,16 @@
-export const schemaTypes = []
+import blockContent from './blockContent'
+import category from './category'
+import post from './post'
+import author from './author'
+import contact from './contact'
+import services from './services'
+import homeInfo from './homeInfo'
+import aboutMe from './aboutMe'
+import helloSection from './helloSection'
+import blogSection from './blogSection'
+import servicesSection from './servicesSection'
+import servicesInfo from './servicesInfo'
+import blogPage from './blogPage'
+import navbarInfo from './navbarInfo'
+
+export const schemaTypes = [post, author, category, blockContent, services, helloSection, blogSection, servicesSection, aboutMe, contact, homeInfo, servicesInfo, blogPage, navbarInfo];
